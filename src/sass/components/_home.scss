@@ -1,6 +1,5 @@
 .home {
   position: relative;
-  overflow: hidden;
   .wrapper {
     height: 100%;
   }
@@ -8,7 +7,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
-    overflow: hidden;
   }
   &__title {
     &-container {

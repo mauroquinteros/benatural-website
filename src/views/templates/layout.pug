@@ -7,7 +7,7 @@ html(lang="es")
     block meta
   body
     if home_layout
-      div(class=home_layout)
+      div(class=`layout ${home_layout}`)
         include ../components/header.pug
         block content
         div(class="footer__fixed")

@@ -1,6 +1,11 @@
 extends ./templates/layout.pug
 block meta
-  title About Benatural
+  title Be Natural - Nosotros
 block content
-  h2 About page
-  include ./components/item.pug
+  main(class="about")
+    div.wrapper
+      div.about__container
+        div.about__info
+          h2.about__title Nosotros
+          p.about__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius hendrerit vestibulum id imperdiet elit morbi. Ipsum nibh pellentesque facilisi aliquam eleifend at enim ac vehicula. Nunc, aliquam nec ornare consectetur vestibulum, venenatis condimentum. Fames donec turpis tortor, semper tellus vitae. Pulvinar interdum aliquet vitae tortor amet.
+        img(class="about__image",src=require("../public/images/about-background.png").default, alt="be natural nosotros imagen")

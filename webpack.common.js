@@ -5,6 +5,7 @@ module.exports = {
   entry: {
     app: path.resolve(__dirname, "src/app.js"),
     home: path.resolve(__dirname, "src/js/home.js"),
+    about: path.resolve(__dirname, "src/js/about.js"),
   },
   module: {
     rules: [
@@ -40,7 +41,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/views/about.pug"),
       filename: "nosotros.html",
-      chunks: ["app"],
+      chunks: ["app", "about"],
     }),
   ],
 };
