@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     app: path.resolve(__dirname, "src/app.js"),
+    home: path.resolve(__dirname, "src/js/home.js"),
   },
   module: {
     rules: [
@@ -34,11 +35,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/views/index.pug"),
       filename: "index.html",
-      chunks: ["app"],
+      chunks: ["app", "home"],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/views/about.pug"),
-      filename: "about.html",
+      filename: "nosotros.html",
       chunks: ["app"],
     }),
   ],
