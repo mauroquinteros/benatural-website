@@ -1,9 +1,7 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
+@import "./normalize";
+@import "./components/globals";
+
+// Components
+@import "./components/header";
+@import "./components/home";
+@import "./components/footer";

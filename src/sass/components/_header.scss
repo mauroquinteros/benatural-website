@@ -1,0 +1,51 @@
+// Usar position sticky
+// usar min-width
+// evitar usar height y centrarlo con el padding
+// usar rem de manera globales
+// usar em para los buttons (padding, margin o height) y para las fuentes
+// em para componentes
+// usar en el logo width porcentaje, max-width y min-width
+// al container principal ponerle min-height 100vh y con flex
+// 78px padding
+.header {
+  font-family: var(--ft-nunito);
+  padding: 1.6rem 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: inline-block;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.navbar {
+  display: flex;
+  &__list {
+    display: inherit;
+    height: inherit;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+  }
+  &__item {
+    padding: 1em;
+    &:first-of-type {
+      padding-left: 0;
+    }
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+  &__link {
+    color: var(--gray-clr);
+    font-weight: 700;
+  }
+}

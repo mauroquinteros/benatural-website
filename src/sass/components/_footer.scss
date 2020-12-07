@@ -1,0 +1,40 @@
+.footer {
+  width: 100%;
+  padding: 0 0 4rem;
+  &__fixed {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-clr);
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    &:not(:last-of-type) {
+      margin-right: 3.6rem;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+  }
+  &__icon {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__text {
+    margin: 0;
+  }
+}
