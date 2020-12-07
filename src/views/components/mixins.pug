@@ -1,0 +1,5 @@
+mixin catalogo-item(image, title, description)
+  article.catalogo__item
+    figure.catalogo__item-image
+      img(src=require(`../public/images/${image}`).default, alt=description)
+    h3.catalogo__item-title=title

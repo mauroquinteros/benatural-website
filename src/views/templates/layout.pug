@@ -16,4 +16,11 @@ html(lang="es")
       div(class="layout")
         include ../components/header.pug
         block content
-        include ../components/footer.pug
+        if dark_footer
+          div(class=dark_footer)
+            include ../components/footer.pug
+        else if light_footer
+          div(class=light_footer)
+            include ../components/footer.pug
+        else
+          include ../components/footer.pug

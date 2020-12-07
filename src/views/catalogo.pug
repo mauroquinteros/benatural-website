@@ -1,0 +1,16 @@
+extends ./templates/layout.pug
+include ./components/mixins.pug
+block variables
+  - var dark_footer = 'footer__dark'
+block meta
+  title Be Natural - Catalogo
+block content
+  main(class="catalogo")
+    div.wrapper
+      div.catalogo__container
+        h2.catalogo__title Confitado
+        section.catalogo__list
+          +catalogo-item('catalogo-image.png', 'Confitado', 'Be Natural Confitado')
+          +catalogo-item('catalogo-image.png', 'Confitado', 'Be Natural Confitado')
+          +catalogo-item('catalogo-image.png', 'Confitado', 'Be Natural Confitado')
+          +catalogo-item('catalogo-image.png', 'Confitado', 'Be Natural Confitado')
