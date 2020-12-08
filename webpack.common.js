@@ -7,6 +7,7 @@ module.exports = {
     home: path.resolve(__dirname, "src/js/home.js"),
     about: path.resolve(__dirname, "src/js/about.js"),
     catalogo: path.resolve(__dirname, "src/js/catalogo.js"),
+    contact: path.resolve(__dirname, "src/js/contact.js"),
   },
   module: {
     rules: [
@@ -41,13 +42,18 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/views/about.pug"),
-      filename: "nosotros.html",
+      filename: "nosotros",
       chunks: ["app", "about"],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/views/catalogo.pug"),
-      filename: "catalogo.html",
+      filename: "catalogo",
       chunks: ["app", "catalogo"],
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/views/contact.pug"),
+      filename: "contacto",
+      chunks: ["app", "contact"],
     }),
   ],
 };
