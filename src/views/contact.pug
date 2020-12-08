@@ -8,8 +8,21 @@ block content
   main(class="contact")
     div.wrapper
       div.contact__container
-        form(action="", method="post", class="contact__form")
-          div.contact__group
-            label(for="email")
-              | Correo electrónico
-            input(type="email", name="email", id="email", class="contact__input", placeholder="Ingrese su correo electrónico")
+        section.form__container
+          h2.contact__title Contáctanos
+          form(action="", method="post", class="form")
+            div.form__group
+              label(for="email", class="form__label")
+                | Correo electrónico
+              input(type="email", name="email", id="email", class="form__input", placeholder="Ingrese su correo electrónico", required)
+            div.form__group
+              label(for="name", class="form__label")
+                | Apellidos y Nombres
+              input(type="text", name="name", id="name", class="form__input", placeholder="Ingrese apellidos y nombres",  required)
+            div.form__group
+              label(for="message", class="form__label")
+                | Mensaje
+              textarea(id="message", name="message", cols="30", rows="10", class="form__input form__textarea",  required)
+            button(type="submit", class="form__button") Enviar
+        div.contact__map-container
+          <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.5297842669747!2d-77.0604143847483!3d-12.007003991493812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce300d8854e1%3A0x6a1b58f36fcc79a6!2sPlaza%20Norte!5e0!3m2!1ses-419!2spe!4v1607463806110!5m2!1ses-419!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen aria-hidden="false" tabindex="0"></iframe>

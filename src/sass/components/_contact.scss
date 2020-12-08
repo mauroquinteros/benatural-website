@@ -1,0 +1,94 @@
+.contact {
+  .wrapper {
+    height: 100%;
+  }
+  &__container {
+    height: inherit;
+    display: grid;
+    grid-template-columns: 1fr 71rem;
+    place-items: center center;
+  }
+  &__title {
+    font-size: 4.3rem;
+    font-weight: 700;
+    margin: 0 0 0.4em;
+    color: var(--green-clr);
+  }
+  &__map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    &-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 91%;
+    }
+  }
+}
+.form {
+  &__container {
+    max-width: 51rem;
+    max-height: 64rem;
+    padding: 6.2rem 4.5rem;
+    box-shadow: 0 0 2.7rem rgba(0, 0, 0, 0.15);
+    border-radius: 1.8rem;
+    text-align: center;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-of-type) {
+      margin-bottom: 1.6rem;
+    }
+    &:last-of-type {
+      margin-bottom: 2.4rem;
+    }
+  }
+  &__label {
+    max-width: 16ch;
+    font-size: 1.6rem;
+    text-align: left;
+    color: var(--lightdark-clr);
+  }
+  &__input {
+    width: 100%;
+    background-color: var(--darkwhite-clr);
+    margin-top: 0.8rem;
+    padding: 1.5rem 1.8rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    &::placeholder {
+      font-size: 1.6rem;
+      color: var(--lightgray-clr);
+    }
+    &:focus {
+      border: 0.2rem solid var(--lightdark-clr);
+    }
+  }
+  &__textarea {
+    max-height: 16.2rem;
+    overflow-y: auto;
+    resize: none;
+    scrollbar-width: thin;
+  }
+  &__button {
+    font-size: 1.6rem;
+    min-width: 38rem;
+    padding: 1em;
+    background-color: var(--green-clr);
+    color: var(--white-clr);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0.8125em;
+    box-shadow: 0 0.4rem 0.9rem rgba(0, 0, 0, 0.25);
+    &:focus,
+    &:active {
+      border: 0.2rem solid var(--darkgreen-clr);
+    }
+  }
+}
