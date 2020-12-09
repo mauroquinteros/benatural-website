@@ -1,5 +1,118 @@
 .category {
-  h2 {
-    color: red;
+  .wrapper {
+    height: 100%;
+  }
+  &__container {
+    height: inherit;
+    padding: 4rem;
+  }
+  &__title {
+    font-size: 7.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5em;
+    color: var(--green-clr);
+    &-gray {
+      color: var(--gray-clr);
+    }
+  }
+  &__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27.2rem, 1fr));
+    gap: 3rem 5.2rem;
+  }
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2.2rem;
+  background: var(--white-clr);
+  box-shadow: 0 0 2.7rem rgba(0, 0, 0, 0.15);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  &__image {
+    width: var(--product-width);
+    height: var(--product-height);
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__body {
+    width: 100%;
+  }
+  &__title {
+    margin: 0.3em 0;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.8rem 0;
+  }
+  &__star {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  &__price {
+    font-weight: 700;
+    color: var(--green-clr);
+  }
+  &__description {
+    font-size: 1.4rem;
+    margin: 0 0 2.4rem;
+    width: inherit;
+  }
+  &__footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__button {
+    font-size: 1.4rem;
+    min-width: 9.6rem;
+    padding: 0.36em 1.43em;
+    background: var(--green-clr);
+    color: var(--white-clr);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.9rem rgba(0, 0, 0, 0.25);
+    &:focus,
+    &:active {
+      border: 0.2rem solid var(--darkgreen-clr);
+    }
+  }
+}
+.arrow {
+  &__container {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+  }
+  &__title {
+    margin: 0;
+    margin-right: 0.9em;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  &__image {
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+  }
+}
+.product {
+  &__container {
+    margin-top: 4rem;
   }
 }

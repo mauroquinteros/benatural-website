@@ -8,4 +8,23 @@ block content
   main(class="category")
     div.wrapper
       div.category__container
-        h2 Categoria 1
+        h2.category__title Lo más nuevo
+        section.category__list
+          +newproduct-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et est aliquet quisque volutpat. Lectus platea condimentum sodales sollicitudin diam.')
+          +newproduct-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et est aliquet quisque volutpat. Lectus platea condimentum sodales sollicitudin diam.')
+          +newproduct-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et est aliquet quisque volutpat. Lectus platea condimentum sodales sollicitudin diam.')
+          +newproduct-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et est aliquet quisque volutpat. Lectus platea condimentum sodales sollicitudin diam.')
+        a(href="#product-list", class="arrow__container")
+          h4.arrow__title más productos
+          img(class="arrow__image", src=require("../public/images/down-arrow.svg").default, alt="Be Natural arrow")
+        section(class="product__container", id="product-list")
+          h4.category__title.category__title-gray Tambien te puede interesar
+          section.category__list
+            +product-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00')
+            +product-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00')
+            +product-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00')
+            +product-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00')
+            +product-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00')
+            +product-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00')
+            +product-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00')
+            +product-item('catalogo-image.png', 'Be Natural categoria 1', 'Producto', '13.00')

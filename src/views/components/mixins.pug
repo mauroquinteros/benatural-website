@@ -2,4 +2,41 @@ mixin catalogo-item(image, title, description, url)
   a(href=`http://localhost:8000/${url}`, class="catalogo__item")
     figure.catalogo__item-image
       img(src=require(`../public/images/${image}`).default, alt=description)
-    h3.catalogo__item-title=title
+    h3.catalogo__item-title= title
+
+mixin newproduct-item(image, alt, title, price, description)
+  article.product
+    figure.product__image
+      img(src=require(`../public/images/${image}`).default, alt=alt)
+    section.product__body
+      h3.product__title= title
+      div.product__info
+        div.product__star-container
+          img(class="newproduct__star",src=require("../public/images/star-icon.svg").default, alt="Be Natural star icon")
+          img(class="newproduct__star",src=require("../public/images/star-icon.svg").default, alt="Be Natural star icon")
+          img(class="newproduct__star",src=require("../public/images/star-icon.svg").default, alt="Be Natural star icon")
+          img(class="newproduct__star",src=require("../public/images/star-icon.svg").default, alt="Be Natural star icon")
+          img(class="newproduct__star",src=require("../public/images/star-icon.svg").default, alt="Be Natural star icon")
+        span.product__price= `S/${price}`
+      p.product__description= description
+    footer.product__footer
+      button.product__button Ver más
+      button.product__button Comprar
+
+mixin product-item(image, alt, title, price)
+  article.product
+    figure.product__image
+      img(src=require(`../public/images/${image}`).default, alt=alt)
+    section.product__body
+      h3.product__title= title
+      div.product__info
+        div.product__star-container
+          img(class="newproduct__star",src=require("../public/images/star-icon.svg").default, alt="Be Natural star icon")
+          img(class="newproduct__star",src=require("../public/images/star-icon.svg").default, alt="Be Natural star icon")
+          img(class="newproduct__star",src=require("../public/images/star-icon.svg").default, alt="Be Natural star icon")
+          img(class="newproduct__star",src=require("../public/images/star-icon.svg").default, alt="Be Natural star icon")
+          img(class="newproduct__star",src=require("../public/images/star-icon.svg").default, alt="Be Natural star icon")
+        span.product__price= `S/${price}`
+    footer.product__footer
+      button.product__button Ver más
+      button.product__button Comprar
