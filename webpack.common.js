@@ -43,22 +43,22 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/views/about.pug"),
-      filename: "nosotros",
+      filename: "nosotros.html",
       chunks: ["app", "about"],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/views/catalogo.pug"),
-      filename: "catalogo",
+      filename: "catalogo.html",
       chunks: ["app", "catalogo"],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/views/contact.pug"),
-      filename: "contacto",
+      filename: "contacto.html",
       chunks: ["app", "contact"],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/views/category.pug"),
-      filename: "categoria1",
+      filename: "categoria1.html",
       chunks: ["app", "category"],
     }),
   ],

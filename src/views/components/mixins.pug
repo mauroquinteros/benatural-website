@@ -1,5 +1,5 @@
 mixin catalogo-item(image, title, description, url)
-  a(href=`http://localhost:8000/${url}`, class="catalogo__item")
+  a(href=`http://localhost:5500/${url}`, class="catalogo__item")
     figure.catalogo__item-image
       img(src=require(`../public/images/${image}`).default, alt=description)
     h3.catalogo__item-title= title
