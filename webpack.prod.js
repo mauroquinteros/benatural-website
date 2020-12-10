@@ -12,7 +12,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = merge(common, {
   mode: "production",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "public"),
     publicPath: PRODUCTION_PATH,
     filename: "js/[name].[contentHash].bundle.js",
   },
